@@ -80,13 +80,15 @@ function add_card(obj){
   let email = obj["email"]
   let img = obj["img"]
   let markup = `
-  <div class="card col-12 col-md-4 col-sm-6">
+  <div class="col-12 col-md-4 col-sm-6">
+    <div class="card row m-2">
       <div class="card-body">
           <img class="card-img rounded-circle p-4" src=${img}></img>
           <h6 class="card-name fs-3 mb-2 text-center text-primary">${name}</h6>
           <p class="card-role fs-4 text-center">${role}</p>
           <p class="card-role fs-5 text-center">${email}</p>
       </div>
+    </div>
   </div>
   `
   //console.log(markup)
